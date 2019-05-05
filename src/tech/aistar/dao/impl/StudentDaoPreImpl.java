@@ -155,4 +155,56 @@ public class StudentDaoPreImpl implements IStudentDao{
     public Student findBySname(String sname) {
         return null;
     }
+
+    @Override
+    public void saveList(List<Student> students) {
+        Connection conn = null;
+
+        PreparedStatement pst = null;
+
+        try {
+            conn = JdbcUtil.getConnection();
+            conn.setAutoCommit(false);
+            String sql = "insert into db_student values(null,?,?,?,?)";
+
+            pst = conn.prepareStatement(sql);
+
+            int count = 0;//记录参数的组的数量
+
+            if(null!=students && students.size()>0){
+                for (Student s:students){
+                    pst.setString(1,s.getSno());
+                    pst.setString(2,s.getSname());
+                    pst.setDate(3,new java.sql.Date(s.getBirthday().getTime()));
+                    pst.setString(4,String.valueOf(s.getGender()));
+
+                    pst.addBatch();// 将给定的 SQL 命令添加到此 PreparedStatement 对象的当前命令列表中。
+                    //pst.executeUpdate();
+                    count++;
+
+                    if(count==1000){
+                        pst.executeBatch();
+                        pst.clearBatch();
+                        count = 0;
+                    }
+                }
+            }
+            if(count!=0){
+                pst.executeBatch();
+                pst.clearBatch();
+            }
+            conn.commit();
+        } catch (SQLException e) {
+            if(null!=conn){
+                try {
+                    conn.rollback();
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+            }
+            e.printStackTrace();
+        }finally {
+            JdbcUtil.close(conn,pst,null);
+        }
+    }
 }

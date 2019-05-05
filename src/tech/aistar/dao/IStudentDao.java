@@ -49,4 +49,10 @@ public interface IStudentDao {
      * @return
      */
     Student findBySname(String sname);
+
+    /**
+     * 批处理
+     * @param students
+     */
+    void saveList(List<Student> students);
 }

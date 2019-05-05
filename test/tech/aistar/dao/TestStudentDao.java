@@ -5,7 +5,9 @@ import tech.aistar.dao.impl.StudentDaoImpl;
 import tech.aistar.entity.Gender;
 import tech.aistar.entity.Student;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author success
@@ -48,4 +50,5 @@ public class TestStudentDao {
     public void testGetBySname(){
         System.out.println(studentDao.findBySname("jack' or '1' = '1"));
     }
+
 }

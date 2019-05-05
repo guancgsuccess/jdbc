@@ -225,4 +225,9 @@ public class StudentDaoImpl implements IStudentDao{
             }
             return s;
         }
+
+    @Override
+    public void saveList(List<Student> students) {
+
+    }
 }

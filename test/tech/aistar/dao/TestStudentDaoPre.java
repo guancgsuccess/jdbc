@@ -6,7 +6,9 @@ import tech.aistar.dao.impl.StudentDaoPreImpl;
 import tech.aistar.entity.Gender;
 import tech.aistar.entity.Student;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author success
@@ -72,5 +74,22 @@ public class TestStudentDaoPre {
     @Test
     public void testGetBySname(){
         System.out.println(studentDao.findBySname("jack' or '1' = '1"));
+    }
+
+
+    @Test
+    public void testSaveList(){
+        List<Student> list01 = new ArrayList<>();
+
+        for (int i = 0; i < 100000; i++) {
+            Student s = new Student("200"+i,"t"+i,new Date(),i%2==0?Gender.F:Gender.M);
+            list01.add(s);
+        }
+
+        long date = System.currentTimeMillis();
+
+        studentDao.saveList(list01);
+
+        System.out.println("耗时:"+(System.currentTimeMillis() - date)+"ms");//耗时:21504ms
     }
 }
