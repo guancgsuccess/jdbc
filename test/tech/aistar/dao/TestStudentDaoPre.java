@@ -63,7 +63,7 @@ public class TestStudentDaoPre {
 
     @Test
     public void testGetById(){
-        System.out.println(studentDao.getById(3));
+        System.out.println(studentDao.getById(2));
     }
 
     @Test

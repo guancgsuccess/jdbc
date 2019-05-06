@@ -43,7 +43,7 @@ public class TestStudentDao {
 
     @Test
     public void testGetById(){
-        System.out.println(studentDao.getById(3));
+        System.out.println(studentDao.getById(2));
     }
 
     @Test
@@ -51,4 +51,8 @@ public class TestStudentDao {
         System.out.println(studentDao.findBySname("jack' or '1' = '1"));
     }
 
+    @Test
+    public void testDelById(){
+        studentDao.delById(1);
+    }
 }

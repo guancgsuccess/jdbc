@@ -2,6 +2,7 @@ package tech.aistar.dao.impl;
 
 import tech.aistar.dao.IStudentDao;
 import tech.aistar.entity.Student;
+import tech.aistar.jdbc.util.JdbcTemplate;
 import tech.aistar.jdbc.util.JdbcUtil;
 
 import java.sql.*;
@@ -74,7 +75,20 @@ public class StudentDaoPreImpl implements IStudentDao{
 
     @Override
     public Student getById(Integer id) {
-        return null;
+        return (Student) JdbcTemplate.executeQuery(conn -> {
+            String sql = "select * from db_student where id = ?";
+            PreparedStatement pst = conn.prepareStatement(sql);
+            pst.setInt(1,id);
+            return pst;
+        },rs -> {
+            Student s = null;
+            while(rs.next()){
+                s = new Student();
+                s.setId(rs.getInt(1));
+                s.setSname(rs.getString(2));
+            }
+            return s;
+        });
     }
 
     @Override

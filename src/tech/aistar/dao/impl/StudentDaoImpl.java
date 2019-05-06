@@ -3,6 +3,7 @@ package tech.aistar.dao.impl;
 import tech.aistar.dao.IStudentDao;
 import tech.aistar.entity.Gender;
 import tech.aistar.entity.Student;
+import tech.aistar.jdbc.util.JdbcTemplate;
 
 import java.sql.*;
 import java.util.List;
@@ -142,7 +143,13 @@ public class StudentDaoImpl implements IStudentDao{
 
     @Override
     public void delById(Integer id) {
-
+        JdbcTemplate.executeUpdate(conn -> {
+            PreparedStatement pst = null;
+            String sql="delete from db_student where id = ?";
+            pst = conn.prepareStatement(sql);
+            pst.setInt(1,id);
+            return pst;
+        });
     }
 
     @Override
