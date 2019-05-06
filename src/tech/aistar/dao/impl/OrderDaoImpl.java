@@ -4,6 +4,7 @@ import tech.aistar.dao.IOrderDao;
 import tech.aistar.entity.Customer;
 import tech.aistar.entity.Order;
 import tech.aistar.entity.OrderStatus;
+import tech.aistar.jdbc.util.JdbcTemplate;
 import tech.aistar.jdbc.util.JdbcUtil;
 
 import java.sql.Connection;
@@ -50,5 +51,10 @@ public class OrderDaoImpl implements IOrderDao{
             JdbcUtil.close(conn,pst,rs_order);
         }
         return orders;
+    }
+
+    @Override
+    public void delById(Integer id) {
+        JdbcTemplate.executeUpdate("delete from db_orders where id = ?",id);
     }
 }

@@ -154,7 +154,7 @@ public class StudentDaoImpl implements IStudentDao{
 
     @Override
     public void update(Student s) {
-
+        JdbcTemplate.executeUpdate("update db_student set sname = ? where id = ?",new Object[]{s.getSname(),s.getId()});
     }
 
 
