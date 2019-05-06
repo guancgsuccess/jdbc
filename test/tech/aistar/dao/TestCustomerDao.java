@@ -36,4 +36,24 @@ public class TestCustomerDao {
             }
         }
     }
+
+    @Test
+    public void testFindTwoSql(){
+        List<Customer> customerList = customerDao.findAllByTwoSql();
+
+        for (Customer c:customerList){
+            System.out.println(c);
+
+            Set<Order> orderSet = c.getOrders();
+
+            if(orderSet.size()>0){
+                System.out.println("订单信息如下:>");
+                for (Order o:orderSet){
+                    System.out.println("\t"+o);
+                }
+            }else{
+                System.out.println("该客户没有订单信息!");
+            }
+        }
+    }
 }
