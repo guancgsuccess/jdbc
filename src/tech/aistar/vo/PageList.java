@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * @author success
  * @version 1.0
- * @description:本类用来演示:用来封装分页的实体
+ * @description:本类用来演示:用来封装分页的实体s
  * @date 2019/5/5 0005
  */
 public class PageList<T>{
