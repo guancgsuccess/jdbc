@@ -7,4 +7,5 @@ package tech.aistar.entity;
  * @date 2019/5/6 0006
  */
 public enum OrderStatus {
+    A,B,C,D
 }
