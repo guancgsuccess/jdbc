@@ -2,6 +2,7 @@ package tech.aistar.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import java.io.Serializable;
 import java.util.Set;
@@ -14,6 +15,7 @@ import java.util.Set;
  */
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@ToString(exclude = "orders")
 public class Customer implements Serializable{
 
     @EqualsAndHashCode.Include
