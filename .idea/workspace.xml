@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cc2b7d9-9d59-4a9f-a7aa-4ccc245f6531" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/IOrderDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/OrderDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/service/ICustomerSerice.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/service/impl/CustomerServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/serice/TestCustomerService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JdbcTeach/out/production/JdbcTeach/tech/aistar/dao/ICustomerDao.class" afterPath="$PROJECT_DIR$/../JdbcTeach/out/production/JdbcTeach/tech/aistar/dao/ICustomerDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JdbcTeach/out/production/JdbcTeach/tech/aistar/dao/impl/CustomerDaoImpl.class" afterPath="$PROJECT_DIR$/../JdbcTeach/out/production/JdbcTeach/tech/aistar/dao/impl/CustomerDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JdbcTeach/out/test/JdbcTeach/tech/aistar/dao/TestCustomerDao.class" afterPath="$PROJECT_DIR$/../JdbcTeach/out/test/JdbcTeach/tech/aistar/dao/TestCustomerDao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JdbcTeach/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JdbcTeach/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/ICustomerDao.java" afterPath="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/ICustomerDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/CustomerDaoImpl.java" afterPath="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/CustomerDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/dao/TestCustomerDao.java" afterPath="$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/dao/TestCustomerDao.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../JdbcTeach/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +76,132 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ICustomerSerice.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/service/ICustomerSerice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ICustomerDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/ICustomerDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/service/impl/CustomerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#792#793#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/CustomerDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="906">
+              <caret line="122" column="34" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="122" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1557110560498" expanded="true" signature="783:867" ph="select c.id db_customer" />
+                <marker date="1557110560498" expanded="true" signature="2823:2848" ph="select * fro... db_customer" />
+                <marker date="1557110560498" expanded="true" signature="3012:3049" ph="select * fro... db_orders" />
+                <marker date="1557110560498" expanded="true" signature="4542:4567" ph="select * fro... db_customer" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IOrderDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/IOrderDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/OrderDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="39" column="48" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="39" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1557109946088" expanded="true" signature="874:911" ph="select * fro... db_orders" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCustomerService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/serice/TestCustomerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#355#379#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCustomerDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/dao/TestCustomerDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestStudentService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/serice/TestStudentService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IStudentDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/IStudentDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="57" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,11 +255,16 @@
         <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/entity/Customer.java" />
         <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/entity/Order.java" />
         <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/entity/OrderStatus.java" />
-        <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/ICustomerDao.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6d674fff-1cc4-4084-b1aa-d507bb8e4a20/console.sql" />
         <option value="$PROJECT_DIR$/../JdbcTeach/script/customer.sql" />
-        <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/CustomerDaoImpl.java" />
         <option value="$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/dao/TestCustomerDao.java" />
+        <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/ICustomerDao.java" />
+        <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/IOrderDao.java" />
+        <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/OrderDaoImpl.java" />
+        <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/service/ICustomerSerice.java" />
+        <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/CustomerDaoImpl.java" />
+        <option value="$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/serice/TestCustomerService.java" />
+        <option value="$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/service/impl/CustomerServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -184,7 +325,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="serice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JdbcTeach" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JdbcTeach" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JdbcTeach" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JdbcTeach" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -199,10 +376,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -234,7 +407,47 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JdbcTeach" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JdbcTeach" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JdbcTeach" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JdbcTeach" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,59 +492,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCustomerDao.testFindCascade">
-    <configuration default="false" name="TestStudentDao.testSaveList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tech.aistar.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="JdbcTeach" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tech.aistar.dao" />
-      <option name="MAIN_CLASS_NAME" value="tech.aistar.dao.TestStudentDao" />
-      <option name="METHOD_NAME" value="testSaveList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestStudentDaoPre.testSaveList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tech.aistar.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="JdbcTeach" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tech.aistar.dao" />
-      <option name="MAIN_CLASS_NAME" value="tech.aistar.dao.TestStudentDaoPre" />
-      <option name="METHOD_NAME" value="testSaveList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestCustomerService.testFindCustomerAndOrder">
     <configuration default="false" name="ss" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -385,6 +546,58 @@
       <option name="PACKAGE_NAME" value="tech.aistar.dao" />
       <option name="MAIN_CLASS_NAME" value="tech.aistar.dao.TestCustomerDao" />
       <option name="METHOD_NAME" value="testFindCascade" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestCustomerDao.testFindTwoSql" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tech.aistar.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="JdbcTeach" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tech.aistar.dao" />
+      <option name="MAIN_CLASS_NAME" value="tech.aistar.dao.TestCustomerDao" />
+      <option name="METHOD_NAME" value="testFindTwoSql" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestCustomerService.testFindCustomerAndOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tech.aistar.serice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="JdbcTeach" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tech.aistar.serice" />
+      <option name="MAIN_CLASS_NAME" value="tech.aistar.serice.TestCustomerService" />
+      <option name="METHOD_NAME" value="testFindCustomerAndOrder" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -663,19 +876,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestStudentDao.testSaveList" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestStudentDaoPre.testSaveList" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ss" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Customer" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCustomerDao.testFindCascade" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ss" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Customer" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCustomerDao.testFindCascade" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCustomerDao.testFindTwoSql" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCustomerService.testFindCustomerAndOrder" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestCustomerDao.testFindCascade" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Customer" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ss" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestStudentDaoPre.testSaveList" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestStudentDao.testSaveList" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestCustomerService.testFindCustomerAndOrder" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestCustomerDao.testFindTwoSql" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestCustomerDao.testFindCascade" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Customer" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ss" />
       </list>
     </recent_temporary>
   </component>
@@ -697,7 +910,7 @@
       <workItem from="1557016902601" duration="14555000" />
       <workItem from="1557043558610" duration="1915000" />
       <workItem from="1557102108872" duration="360000" />
-      <workItem from="1557102505724" duration="5383000" />
+      <workItem from="1557102505724" duration="8434000" />
     </task>
     <task id="LOCAL-00001" summary="jdbc第二天">
       <created>1557039297056</created>
@@ -716,23 +929,23 @@
     <history-entry file="TestCustomerDao_testFindCascade - 2019.05.06 at 09h 40m 09s.xml">
       <configuration name="TestCustomerDao.testFindCascade" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentDaoPre_testSave - 2019.05.05 at 10h 40m 03s.xml">
-      <configuration name="TestStudentDaoPre.testSave" configurationId="JUnit" />
+    <history-entry file="TestCustomerDao_testFindTwoSql - 2019.05.06 at 10h 21m 17s.xml">
+      <configuration name="TestCustomerDao.testFindTwoSql" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentDaoPre_testSave - 2019.05.05 at 10h 41m 00s.xml">
-      <configuration name="TestStudentDaoPre.testSave" configurationId="JUnit" />
+    <history-entry file="TestCustomerDao_testFindTwoSql - 2019.05.06 at 10h 22m 01s.xml">
+      <configuration name="TestCustomerDao.testFindTwoSql" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentDaoPre_testSaveList - 2019.05.05 at 16h 15m 24s.xml">
-      <configuration name="TestStudentDaoPre.testSaveList" configurationId="JUnit" />
+    <history-entry file="TestCustomerService_testFindCustomerAndOrder - 2019.05.06 at 10h 41m 43s.xml">
+      <configuration name="TestCustomerService.testFindCustomerAndOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentDaoPre_testSaveList - 2019.05.05 at 16h 16m 52s.xml">
-      <configuration name="TestStudentDaoPre.testSaveList" configurationId="JUnit" />
+    <history-entry file="TestCustomerService_testFindCustomerAndOrder - 2019.05.06 at 10h 42m 15s.xml">
+      <configuration name="TestCustomerService.testFindCustomerAndOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentDaoPre_testSaveList - 2019.05.05 at 16h 21m 51s.xml">
-      <configuration name="TestStudentDaoPre.testSaveList" configurationId="JUnit" />
+    <history-entry file="TestCustomerService_testFindCustomerAndOrder - 2019.05.06 at 10h 42m 51s.xml">
+      <configuration name="TestCustomerService.testFindCustomerAndOrder" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestStudentDao_testSaveList - 2019.05.05 at 16h 13m 52s.xml">
-      <configuration name="TestStudentDao.testSaveList" configurationId="JUnit" />
+    <history-entry file="TestCustomerService_testFindCustomerAndOrder - 2019.05.06 at 10h 43m 38s.xml">
+      <configuration name="TestCustomerService.testFindCustomerAndOrder" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestStudentService_testFind - 2019.05.05 at 14h 40m 21s.xml">
       <configuration name="TestStudentService.testFind" configurationId="JUnit" />
@@ -742,10 +955,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28903000" />
+    <option name="totallyTimeSpent" value="31954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -754,11 +968,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38741258" sideWeight="0.5025707" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33566433" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32867134" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14685315" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47272727" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12587413" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3033419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3033419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27956298" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -784,9 +998,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33566433" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32027972" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8181818" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33566433" sideWeight="0.4974293" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47272727" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12587413" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3033419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -984,24 +1198,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/serice/TestStudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/page/impl/StudentDaoPageImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/IStudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="57" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1168,16 +1368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/ICustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../JdbcTeach/script/customer.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1191,16 +1381,6 @@
         <state relative-caret-position="270">
           <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="84" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/dao/TestCustomerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1230,21 +1410,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/CustomerDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="46" column="40" lean-forward="false" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1557106584180" expanded="true" signature="783:867" ph="select c.id db_customer" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../JdbcTeach/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18000">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/IOrderDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="19" column="15" lean-forward="false" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/serice/TestStudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/dao/TestCustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JdbcTeach/test/tech/aistar/serice/TestCustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#355#379#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/service/ICustomerSerice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/CustomerDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="906">
+          <caret line="122" column="34" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="122" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1557110560498" expanded="true" signature="783:867" ph="select c.id db_customer" />
+            <marker date="1557110560498" expanded="true" signature="2823:2848" ph="select * fro... db_customer" />
+            <marker date="1557110560498" expanded="true" signature="3012:3049" ph="select * fro... db_orders" />
+            <marker date="1557110560498" expanded="true" signature="4542:4567" ph="select * fro... db_customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/impl/OrderDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="39" column="48" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="39" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1557109946088" expanded="true" signature="874:911" ph="select * fro... db_orders" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/service/impl/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/ICustomerDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../JdbcTeach/src/tech/aistar/dao/IStudentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="57" selection-end-column="1" />
           <folding />
         </state>
       </provider>
