@@ -18,4 +18,6 @@ public interface IOrderDao {
      * @return
      */
     Set<Order> findByCid(Integer cid);
+
+    void delById(Integer id);
 }

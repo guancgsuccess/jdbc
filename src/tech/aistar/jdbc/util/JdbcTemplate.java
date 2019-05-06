@@ -63,4 +63,29 @@ public class JdbcTemplate {
             JdbcUtil.close(conn,pst,null);
         }
     }
+
+    public static void executeUpdate(String sql,Object... args){
+        Connection conn = null;
+        PreparedStatement pst = null;
+        try {
+            conn = JdbcUtil.getConnection();
+            //pst = conn.prepareStatement(sql);
+            //确定sql中可能含有参数?
+            //使用接口...
+            //细节操作...
+            pst = conn.prepareStatement(sql);
+            //sql有可能存在参数..
+            if(null!=args){
+               for(int i=0;i<args.length;i++){
+                    pst.setObject(i+1,args[i]);
+                }
+            }
+            pst.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally{
+            JdbcUtil.close(conn,pst,null);
+        }
+    }
+
 }
