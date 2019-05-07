@@ -1,7 +1,11 @@
 package tech.aistar.jdbc.util;
 
 
+import java.io.RandomAccessFile;
 import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.LinkedList;
+import java.util.RandomAccess;
 
 /**
  * @author success
@@ -16,16 +20,7 @@ public class TestBingFaMyPool {
                 @Override
                 public void run() {
                     MyPool pool = MyPool.getInstance();
-                    Connection conn = pool .getConneciton();
-                    System.out.println(Thread.currentThread().getName()+":"+conn+"->"+pool);
-                    System.out.println("当前连接数:"+pool.curr_count);//2
-                    System.out.println("连接池数量(剩余):"+ pool.pool.size());//1
-
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+                    System.out.println(Thread.currentThread().getName()+":"+pool.getConnection()+"->"+pool);
                 }
             }).start();
         }

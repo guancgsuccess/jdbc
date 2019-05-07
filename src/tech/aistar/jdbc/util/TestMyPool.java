@@ -13,10 +13,10 @@ public class TestMyPool {
     public static void main(String[] args) throws SQLException {
         MyPool2 pool = new MyPool2();
 
-        Connection conn1 = pool.getConneciton();
-        Connection conn2 = pool.getConneciton();
-        Connection conn3 = pool.getConneciton();
-        Connection conn4 = pool.getConneciton();
+        Connection conn1 = pool.getConnection();
+        Connection conn2 = pool.getConnection();
+        Connection conn3 = pool.getConnection();
+        Connection conn4 = pool.getConnection();
 
         System.out.println("当前连接数:"+pool.curr_count);//2
         System.out.println("连接池数量(剩余):"+ pool.pool.size());//1

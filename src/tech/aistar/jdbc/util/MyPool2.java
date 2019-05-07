@@ -73,8 +73,7 @@ public class MyPool2 {
         return proxy;
     }
 
-    public Connection getConneciton(){
-        synchronized (pool) {
+    public Connection getConnection(){
             //判断池子中是否还有连接
             if (pool.size() > 0) {
                 curr_count++;
@@ -86,6 +85,5 @@ public class MyPool2 {
             } else {
                 throw new RuntimeException("sorry,连接池已经到达最大数量了!");
             }
-        }
     }
 }

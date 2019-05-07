@@ -5,6 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.Collections;
 import java.util.LinkedList;
 
 /**
@@ -40,6 +41,7 @@ public class MyPool {
     int maxActive = 6;
 
     //存放连接的容器
+    //线程非安全的容器
     LinkedList<Connection> pool = new LinkedList<>();
 
     private MyPool(){
@@ -51,6 +53,7 @@ public class MyPool {
     /**
      * 创建链接 - 使用的是JDK的动态代理.
      */
+    @SuppressWarnings("all")
     public Connection createConnection(){
         //1. 获取本身的conn对象
         Connection proxy = null;
@@ -88,17 +91,20 @@ public class MyPool {
         return proxy;
     }
 
-    public Connection getConneciton(){
-        //判断池子中是否还有连接
-        if(pool.size()>0){
-            curr_count++;
-            return pool.removeFirst();
-        }else if(curr_count <= maxActive){
-            System.out.println("初始化容量使用完毕,进行扩容...");
-            curr_count++;
-            return createConnection();
-        }else {
-            throw new RuntimeException("sorry,连接池已经到达最大数量了!");
+    @SuppressWarnings("all")
+    public Connection getConnection(){
+        synchronized (pool) {
+            //判断池子中是否还有连接
+            if (pool.size() > 0) {
+                curr_count++;
+                return pool.removeFirst();
+            } else if (curr_count <= maxActive) {
+                System.out.println("初始化容量使用完毕,进行扩容...");
+                curr_count++;
+                return createConnection();
+            } else {
+                throw new RuntimeException("sorry,连接池已经到达最大数量了!");
+            }
         }
     }
 }
