@@ -5,6 +5,7 @@ import tech.aistar.entity.Customer;
 import tech.aistar.entity.Order;
 import tech.aistar.entity.OrderStatus;
 import tech.aistar.jdbc.util.JdbcUtil;
+import tech.aistar.jdbc.util.dbcp.SimpleDataSource;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,7 +27,8 @@ public class CustomerDaoImpl implements ICustomerDao{
         ResultSet rs = null;
         List<Customer> customers = null;
         try {
-            conn = JdbcUtil.getConnection();
+            //利用连接池来获取对象....
+            conn = SimpleDataSource.getInstance().getConnection();
             String sql="select c.id cid,c.cname,o.* from db_customer c left join db_orders o on c.id = o.cid";
             pst = conn.prepareStatement(sql);
             rs = pst.executeQuery();
