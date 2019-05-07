@@ -74,16 +74,18 @@ public class MyPool2 {
     }
 
     public Connection getConneciton(){
-        //判断池子中是否还有连接
-        if(pool.size()>0){
-            curr_count++;
-            return pool.removeFirst();
-        }else if(curr_count <= maxActive){
-            System.out.println("初始化容量使用完毕,进行扩容...");
-            curr_count++;
-            return createConnection();
-        }else {
-            throw new RuntimeException("sorry,连接池已经到达最大数量了!");
+        synchronized (pool) {
+            //判断池子中是否还有连接
+            if (pool.size() > 0) {
+                curr_count++;
+                return pool.removeFirst();
+            } else if (curr_count <= maxActive) {
+                System.out.println("初始化容量使用完毕,进行扩容...");
+                curr_count++;
+                return createConnection();
+            } else {
+                throw new RuntimeException("sorry,连接池已经到达最大数量了!");
+            }
         }
     }
 }
